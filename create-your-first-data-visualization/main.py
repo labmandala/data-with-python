@@ -1,13 +1,11 @@
-# Import matplotlib library here
+import matplotlib.pyplot as plt 
 
-# Let's rank some of our favorite snacks
-snack_scores = []
+snack_scores = [90, 66, 39]
 
-# Let's make a pie chart!
-plt.pie()
+slice_labels = ["Avocado", "Pineapple", "Coconut"]
 
-# Give your pie chart a title in the quotes
-plt.title("")
+plt.pie(snack_scores, labels=slice_labels)
 
-# Put the name of your file in the quotes and give it a .png extension
-plt.savefig("")
+plt.title("Sarah's Favorite Snacks")
+
+plt.savefig("snack_scores")

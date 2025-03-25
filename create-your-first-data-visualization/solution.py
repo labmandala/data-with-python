@@ -8,4 +8,4 @@ plt.pie(snack_scores, labels=slice_labels)
 
 plt.title("Snack Scores")
 
-plt.savefig("snack_scores.png")
+plt.savefig("snack_scores_solution.png")
