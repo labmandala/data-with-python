@@ -1,11 +1,13 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
-snack_scores = [80,45,34]
+snack_scores = [90, 66, 39]
 
-slice_labels = ["Chocolate", "Cheese", "Pickles"]
+slice_labels = ["Avocado", "Pineapple", "Coconut"]
 
-plt.pie(snack_scores, labels=slice_labels)
+colors = ["#5F9EA0","#FF1493","#7FFFD4"]
 
-plt.title("Snack Scores")
+plt.pie(snack_scores, labels=slice_labels, colors=colors)
 
-plt.savefig("snack_scores.png")
+plt.title("Sarah's Favorite Snacks", fontsize=22)
+
+plt.savefig("snack_scores")
