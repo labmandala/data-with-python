@@ -23,4 +23,4 @@ plt.xlabel("Dinner Party Size")
 plt.ylabel("Tip Percentage")
 plt.title("Tip by Party Size")
 
-plt.savefig("tip-by-party-size.png")
+plt.savefig("tip-by-party-size2.png")
