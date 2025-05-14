@@ -20,4 +20,4 @@ for index in range(0, len(fare)):
     fare_not_survived.append(fare[index])
 
 print(fare_survived)
-print(fare_not_survived)
+#print(fare_not_survived)
