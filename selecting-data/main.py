@@ -10,6 +10,8 @@ with open("titanic.csv", "r") as file:
 survived = np.array(data[:,[0]], dtype=int).flatten()
 fare = np.array(data[:,[7]], dtype=float).flatten()
 
+#print(headers)
+
 #empty lists to hold data from  the for loop
 fare_survived = []
 fare_not_survived = []
