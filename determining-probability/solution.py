@@ -31,5 +31,5 @@ plt.ylabel("Passengers")
 plt.title("Titanic Fares and Survival Rates")
 plt.gca().legend(("Did Not Survive","Survived"))
 
-plt.savefig("titanic_fares_and_survival_rates.png")
+plt.savefig("titanic_fares_and_survival_rates2.png")
 
