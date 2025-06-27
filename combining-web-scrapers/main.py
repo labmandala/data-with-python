@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 def get_soup(url):
   r = requests.get(url)
   r.raise_for_status()
@@ -32,7 +33,16 @@ def get_animal(url):
 
 category_data = get_categories("https://skillcrush.github.io/web-scraping-endangered-species/")
 
+# print(category_data)
 
-animal_class = get_animal("https://en.wikipedia.org/wiki/Honey_badger")
+# animal_class = get_animal("https://en.wikipedia.org/wiki/Honey_badger")
 
-print(animal_class)
+# print(animal_class)
+
+for category in category_data:
+  for animal in category_data[category]:
+    animal_href = animal["href"]
+    # print(animal_href)
+    animal_class = get_animal(animal_href)
+    print(animal_class)
+    print()
