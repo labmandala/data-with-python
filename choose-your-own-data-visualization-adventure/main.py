@@ -5,4 +5,9 @@ import matplotlib.pyplot as plt
 with open("books.csv","r") as datafile:
     data = pd.read_csv(datafile,delimiter=",")
 
-print(data["language_code"])
+sns.scatterplot(x="average_rating", y="# num_pages", size="# num_pages", sizes=(20, 180), data=data)
+
+plt.xlabel("Average Rating")
+plt.ylabel("Number of Pages")
+plt.title("Average Rating and Number of Pages")
+plt.savefig("Ratings-and-Pages.png")
